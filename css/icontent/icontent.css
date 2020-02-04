@@ -1,0 +1,19 @@
+
+
+body {
+    scrollbar-width:none;
+    overflow: -moz-scrollbars-none;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    justify-content: center;
+}
+

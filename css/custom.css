@@ -1,0 +1,199 @@
+
+
+.code-editor{
+    /*height : 100%;*/
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+    margin: 1em 1em 1em 1em;
+    border: 0;
+}
+
+
+body {
+    background: #fafafa;
+}
+
+/*iphone mockup*/
+
+.iphone-x {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    margin: 45px auto;
+    width: 375px;
+    height: 812px;
+    background-color: #fff;
+    /*background-image: linear-gradient(60deg, #ebf1fa 1%, #ebf1fa 100%);*/
+    border-radius: 40px;
+    box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+}
+.iphone-x:before, .iphone-x:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.iphone-x:after {
+    bottom: 7px;
+    width: 140px;
+    height: 4px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.iphone-x:before {
+    top: 0px;
+    width: 56%;
+    height: 30px;
+    background-color: #1f1f1f;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.iphone-x > i, .iphone-x > b, .iphone-x > s {
+    position: absolute;
+    display: block;
+    color: transparent;
+}
+.iphone-x > i {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 6px);
+    height: 8px;
+    width: 15%;
+    background-color: #101010;
+    border-radius: 8px;
+    box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+}
+.iphone-x > b {
+    left: 15%;
+    top: 0px;
+    transform: translate(180px, 4px);
+    width: 12px;
+    height: 12px;
+    background-color: #101010;
+    border-radius: 12px;
+    box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+}
+.iphone-x b:after {
+    content: '';
+    position: absolute;
+    background-color: #2d4d76;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 2px;
+    top: 3px;
+    left: 3px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*browser mockup */
+
+.browser-mockup {
+    border-top: 2em solid rgba(230, 230, 230, 0.7);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-radius: 3px 3px 0 0
+}
+
+.browser-mockup:before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -1.25em;
+    left: 1em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #f44;
+    box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.browser-mockup.with-tab:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -2em;
+    left: 5.5em;
+    width: 20%;
+    height: 0em;
+    border-bottom: 2em solid white;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+}
+
+.browser-mockup.with-url:after {
+    display: block;
+    position: absolute;
+    content: '';
+    /*font-size: 0.7em;*/
+    top: -1.6em;
+    left: 5.5em;
+    width: calc(100% - 6em);
+    height: 1.2em;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.browser-mockup > * {
+    display: block;
+}
+
+/* Custom code for the demo */
+
+.browser-mockup {
+    margin: 1em 1.5em 1em 0em;
+    height: 60%;
+}
+
+.blank-mockup {
+    height: 100%;
+}
+.browser-mockup .icontent {
+    padding: 0 0 0 0 !important;
+}
+
+
+    /*content iframe part*/
+
+.content::-webkit-scrollbar-track {
+    display: none;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.content {
+    overflow-y: auto;
+    height: 94%;
+}
+
+.icontent {
+    padding: 3em 0.5em 1em 0.5em;
+    width:100%;
+    height:100%;
+    border-width: 0px !important;
+}
+
+.splitContainer > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter.gutter-horizontal {
+    cursor: col-resize;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+}
+
+.modal-90w {
+    width: 90%;
+    max-width: none!important;
+}
+
+.no-padding {
+    padding: 0 0 0 0 !important;
+}
+
+.no-pointer-events {
+    pointer-events:none;
+}
